@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RtmDemoStan</string>
+    <string name="AppID">71f3985334a34eac9983cbf692cc9fa9</string>
+    <string name="Token">00671f3985334a34eac9983cbf692cc9fa9IADB94/VDjgHE2dRoEeiqkSPMfnfcWJxHVBrwS0OPwbgz3hSBlYAAAAAEACFolwIbelxYgEA6ANt6XFi</string>
+    <string name="et_uid">Input your UID</string>
+    <string name="et_ChannelID">Input Channel ID</string>
+    <string name="et_messageToBeSent">Message To be Sent</string>
+    <string name="et_Peer_ID">Input Peer ID</string>
+
+</resources>

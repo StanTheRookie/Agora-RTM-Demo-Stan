@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditText_UID"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="@string/et_uid"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"
+            android:id="@+id/btn_login"
+            android:onClick="onClickLogin"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Logout"
+            android:id="@+id/btn_logout"
+            android:onClick="onClickLogout"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditText_ChannelID"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="@string/et_ChannelID"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Join"
+            android:id="@+id/btn_Join_Channel"
+            android:onClick="onClickJoin"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Leave"
+            android:id="@+id/btn_Leave_Channel"
+            android:onClick="onClickLeave"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditText_messageToSend"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="@string/et_messageToBeSent"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send_To_Channel"
+            android:id="@+id/btn_send_to_channel"
+            android:onClick="onClickSendChannel"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditText_PeerID"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="@string/et_Peer_ID"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send_To_Peer"
+            android:id="@+id/btn_send_to_peer"
+            android:onClick="onClickSendPeer"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_history_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="#AEA8A8"
+        android:textColor="@color/black"
+        android:freezesText="false"
+        android:isScrollContainer="false"
+        android:scrollbars="vertical"
+
+        />
+
+
+
+
+</LinearLayout>
